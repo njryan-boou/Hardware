@@ -1,0 +1,20 @@
+[build-system]
+requires = [
+    "scikit-build-core>=0.10",
+    "pybind11>=2.12",
+]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "hardwarey"
+version = "0.1.0"
+description = "A generic C++ project with Python bindings powered by pybind11"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[tool.scikit-build]
+wheel.packages = ["python/hardwarey"]
+cmake.build-type = "Release"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
