@@ -50,3 +50,4 @@ build.ninja
 .DS_Store
 Thumbs.db
 main.py
+build-gtest/
